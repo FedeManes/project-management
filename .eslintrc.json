@@ -1,3 +1,35 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "prettier"
+  ],
+  "rules": {
+    "no-multiple-empty-lines": ["error", { "max": 1 }],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "arrow-parens": ["error", "as-needed"],
+    "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+    "object-curly-spacing": ["error", "always"],
+    "quotes": ["error", "single"],
+    "comma-dangle": ["error", "always-multiline"],
+    "react-hooks/exhaustive-deps": "off",
+    "@next/next/no-page-custom-font": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "import/no-unresolved": "off",
+    "space-before-function-paren": "off",
+    "camelcase": "off",
+    "react/display-name": 0,
+    "import/prefer-default-export": 0,
+    "import/named": "off",
+    "no-console": "error",
+    "import/namespace": "off",
+    "no-unused-vars": [
+      "error", {
+        "ignoreRestSiblings": true,
+        "vars": "all",
+        "varsIgnorePattern": ""
+      }
+    ]
+  }
 }
